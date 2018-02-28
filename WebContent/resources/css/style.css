@@ -1,7 +1,6 @@
 .body{
     text-align: center;
-    font-family: Comic Sans MS;
-    
+    font-family: Comic Sans MS;    
 } 
 .tdImageLeft{
 	padding-right:20px;
@@ -33,7 +32,11 @@
 	padding:20px;
 }
 .tableData{
-	border:2px solid grey !important;
+	border:2px solid grey !important; 
 	padding:20px;
 	border-radius: 30px !important;
+}
+.errorMessage{
+	color:red;
+    font-size: 15px;
 }

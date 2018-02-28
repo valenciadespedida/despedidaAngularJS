@@ -39,20 +39,26 @@
 <br><br> 
 <div>
 	¡¡¡ PINCHA AQUI !!!
-	<img class="imageCofre" src="resources/images/cofre.jpg" ng-click="showLogin=true"><br>   			   	
+	<img class="imageCofre" src="resources/images/cofreCerrado.jpg" ng-click="showTableData()" ng-hide="cofreAbierto"><br>  
+	<img class="imageCofre" src="resources/images/cofreAbierto.jpg" ng-show="cofreAbierto"><br>   			   		 			   	
 </div>
 <form ng-submit="checkData()">
-	<table id="cofreClaves" align="center" class="tableData" ng-show="showLogin">
+	<table align="center" class="tableData" ng-show="showTable" ng-hide="!showTable">
 		<tr>
 			<td align="right"><label > Usuario :</label></td>		
-			<td><input type="text" ng-model="despedida.user"></td>	
+			<td><input type="text" ng-model="user"></td>	
 		</tr>
 		<tr>
 			<td align="right"><label > Contraseña :</label></td>		 
-			<td><input type="password" ng-model="despedida.pass"></td>	
+			<td><input type="password" ng-model="pass"></td>	
 		</tr>		
 		<tr >  
 			<td colspan="2" class="buttonClass"><input type="submit" value="¿Comida?"></td>
+		</tr>
+		<tr > 
+			<td colspan="2" align="right">
+				<label class="errorMessage" ng-show="errorMessage!=''" ng-hide="errorMessage==''">{{errorMessage}}</label> 
+			</td>
 		</tr>
 	</table>
 </form>
