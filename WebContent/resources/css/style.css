@@ -1,0 +1,39 @@
+.body{
+    text-align: center;
+    font-family: Comic Sans MS;
+    
+} 
+.tdImageLeft{
+	padding-right:20px;
+} 
+.tdImageRight{
+	padding-left:20px;
+} 
+.image{
+	width:180px; 
+    height:180px;  
+    display: block;
+   	margin-left: auto;
+   	margin-right: auto;
+   	border:4px solid black !important; 
+   	border-radius: 30px !important;
+}
+.correo{
+	border: ridge 	#696969 3px;
+	padding:20px;
+}
+.imageCofre{
+	width:180px; 
+    height:180px; 
+    display: block;
+   	margin-left: auto;
+   	margin-right: auto;
+}
+.buttonClass{
+	padding:20px;
+}
+.tableData{
+	border:2px solid grey !important;
+	padding:20px;
+	border-radius: 30px !important;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="despedidApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>AngularJS</title>
+<script src="lib/angular.min.js"></script>
+<script src="controller.js"></script>
+<link href="resources/css/style.css" rel="stylesheet" />
+
+
+</head>
+<body class="body"  ng-controller="despedidaController"> 
+<h1>Despedida</h1><br><br>
+<table  align="center">
+	<tr >
+	    <td class="tdImageLeft">
+	    	<b>Sergio Asensio</b>
+	    	<br><br>
+  			<img class="image" src="resources/images/asensio.jpg" > 
+  			<br>
+  			<div class="correo">
+	  			gggggggggggggggggggggggggggggggggggggggggggggggggggggege<br>
+	  			wddwqdqwdqwdqwdqwdqwdssssssssssssssssssssssssssssssssssssssssssssssssss 
+  			</div>
+	    </td>  
+	    <td class="tdImageRight">
+	    	<b>Alejandro Esteban </b>
+	    	<br><br>
+  			<img class="image" src="resources/images/esteban.jpg" ><br>  			
+  			<div class="correo">
+	  			gggggggggggggggggggggggggggggggggggggggggggggggggggggege<br>
+	  			wddwqdqwdqwdqwdqwdqwdssssssssssssssssssssssssssssssssssssssssssssssssss   
+  			</div>
+  		</td> 
+    </tr>
+    <tr>
+    </tr> 
+</table> 
+<br><br> 
+<div>
+	¡¡¡ PINCHA AQUI !!!
+	<img class="imageCofre" src="resources/images/cofre.jpg" ng-click="showLogin=true"><br>   			   	
+</div>
+<form ng-submit="checkData()">
+	<table id="cofreClaves" align="center" class="tableData" ng-show="showLogin">
+		<tr>
+			<td align="right"><label > Usuario :</label></td>		
+			<td><input type="text" ng-model="despedida.user"></td>	
+		</tr>
+		<tr>
+			<td align="right"><label > Contraseña :</label></td>		 
+			<td><input type="password" ng-model="despedida.pass"></td>	
+		</tr>		
+		<tr >  
+			<td colspan="2" class="buttonClass"><input type="submit" value="¿Comida?"></td>
+		</tr>
+	</table>
+</form>
+
+</html>
