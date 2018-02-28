@@ -1,7 +1,14 @@
 .body{
     text-align: center;
-    font-family: Comic Sans MS;    
+    font-family: Comic Sans MS;   
 } 
+.cabecera{
+	width:100%;
+	height:100%;
+	background-color: #2F4F4F;
+    font-size: 40px;
+    color:white;
+}
 .tdImageLeft{
 	padding-right:20px;
 } 
@@ -20,6 +27,8 @@
 .correo{
 	border: ridge 	#696969 3px;
 	padding:20px;
+	background-color: grey;
+	color:white;
 }
 .imageCofre{
 	width:180px; 
@@ -34,7 +43,7 @@
 .tableData{
 	border:2px solid grey !important; 
 	padding:20px;
-	border-radius: 30px !important;
+	border-radius: 30px !important;   
 }
 .errorMessage{
 	color:red;

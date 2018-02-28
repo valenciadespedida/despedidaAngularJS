@@ -13,12 +13,12 @@ despedida.showTableData=function(){
 	window.scrollTo(0,document.body.scrollHeight);
 }
 
-//Function that checks user and pass
+//Function that checks user and pass 
 despedida.checkData=function(){	
 	despedida.errorMessage='';
 	if(despedida.user=='Lacito' && despedida.pass=='chocolate') 
 		despedida.cofreAbierto=true;
-	else{
+	else if(!despedida.cofreAbierto){
 		despedida.errorMessage='Tiooooo que te lo he enviado por correo!!!!';
 	}
 }	

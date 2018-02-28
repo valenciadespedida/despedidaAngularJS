@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html ng-app="despedidApp">
-<head>
+<html ng-app="despedidApp" class="html">
+<head >
 <meta charset="ISO-8859-1">
-<title>AngularJS</title>
+<title>DespedidaJS</title>
 <script src="lib/angular.min.js"></script>
 <script src="controller.js"></script>
 <link href="resources/css/style.css" rel="stylesheet" />
-
-
 </head>
 <body class="body"  ng-controller="despedidaController"> 
-<h1>Despedida</h1><br><br>
+<div class="cabecera">
+	<label> Despedida </label>
+</div>
+<br><br><br><br>
 <table  align="center">
 	<tr >
 	    <td class="tdImageLeft">
@@ -19,7 +20,7 @@
   			<img class="image" src="resources/images/asensio.jpg" > 
   			<br>
   			<div class="correo">
-	  			gggggggggggggggggggggggggggggggggggggggggggggggggggggege<br>
+ 				gggggggggggggggggggggggggggggggggggggggggggggggggggggege
 	  			wddwqdqwdqwdqwdqwdqwdssssssssssssssssssssssssssssssssssssssssssssssssss 
   			</div>
 	    </td>  
@@ -28,17 +29,17 @@
 	    	<br><br>
   			<img class="image" src="resources/images/esteban.jpg" ><br>  			
   			<div class="correo">
-	  			gggggggggggggggggggggggggggggggggggggggggggggggggggggege<br>
-	  			wddwqdqwdqwdqwdqwdqwdssssssssssssssssssssssssssssssssssssssssssssssssss   
+				gggggggggggggggggggggggggggggggggggggggggggggggggggggege
+	  			wddwqdqwdqwdqwdqwdqwdssssssssssssssssssssssssssssssssssssssssssssssssss    
   			</div>
   		</td> 
     </tr>
     <tr>
     </tr> 
 </table> 
-<br><br> 
+<br><br><br>
 <div>
-	¡¡¡ PINCHA AQUI !!!
+	<label>¡¡¡ PINCHA AQUI !!!</label>
 	<img class="imageCofre" src="resources/images/cofreCerrado.jpg" ng-click="showTableData()" ng-hide="cofreAbierto"><br>  
 	<img class="imageCofre" src="resources/images/cofreAbierto.jpg" ng-show="cofreAbierto"><br>   			   		 			   	
 </div>
@@ -62,5 +63,4 @@
 		</tr>
 	</table>
 </form>
-
 </html>
